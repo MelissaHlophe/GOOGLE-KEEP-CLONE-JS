@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>Google Keep</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="keep-logo.png" type="image/x-icon">
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <script src="app.js"></script>
+<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+</head>
+
+<body>
+  <div class="modal">
+    <div class="modal-content">
+      <input class="modal-title" placeholder="Title" type="text">
+      <input class="modal-text" placeholder="Take a note..." type="text">
+      <span class="modal-close-button">Close</span>
+    </div>
+  </div>
+  <main>
+  
+        <div class="nav">
+
+            <div class="logo-area">
+                <div class="tooltip">
+                    <span class="material-symbols-outlined hover">menu</span>
+                    <div class="tooltip-text">Main menu</div>
+                </div>
+                
+                <img class="gb_Dc gb_ae" src="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png" srcset="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png 1x, https://www.gstatic.com/images/branding/product/2x/keep_2020q4_48dp.png 2x " alt="" aria-hidden="true" role="presentation" style="width:40px;height:40px">
+               <span class="logo-text">Keep</span>
+            </div>
+               <div class="search-area"><!--opening search area!-->
+                <div class="tooltip">
+                    <span class="material-symbols-outlined hover">search</span>
+                    <div class="tooltip-text">Search</div>
+                </div>
+                <input type="text" placeholder="Search">
+               </div> <!--closing search area!-->
+        
+               <div class="settings-area"><!--opening settings area!-->
+                <div class="tooltip">
+                    <span class="material-symbols-outlined hover">refresh</span>
+                    <div class="tooltip-text">Refresh</div>
+                </div>
+                <div class="tooltip">
+                    <span class="material-symbols-outlined hover">view_agenda</span>
+                    <div class="tooltip-text">List View</div>
+                </div>
+                <div class="tooltip">
+                    <span class="material-symbols-outlined hover">settings</span>
+                    <div class="tooltip-text">Settings</div>
+                </div>
+               </div><!--closing settings area!-->
+        
+               <div class="profile-actions-area"><!--opening profile action area!-->
+                <div class="tooltip">
+                    <span class="material-symbols-outlined hover">apps</span>
+                    <div class="tooltip-text">Apps</div>
+                </div>
+                <div class="tooltip">
+                    <span class="material-symbols-outlined hover">account_circle</span>
+                    <div class="tooltip-text">Account</div>
+                </div>
+              </div><!--closing profile action area!-->
+          
+        
+          </div>  <!--closing nav-->
+   
+    <div id="form-container">
+      <form id="form" autocomplete="off">
+        <input id="note-title" placeholder="Title" type="text">
+        <input id="note-text" placeholder="Take a note..." type="text">
+        <div id="form-buttons">
+          <button type="submit" id="submit-button">Add</button>
+          <button type="button" id="form-close-button">Close</button>
+        </div>
+      </form>
+    </div>
+    <div id="notes"></div>
+    <div id="placeholder">
+      <img id="placeholder-logo" src="https://icon.now.sh/lightbulb_outline">
+      <p id="placeholder-text">Notes you add will appear here</p>
+    </div>
+    <div id="color-tooltip">
+      <div class="color-option" data-color="#fff" id="white"></div>
+      <div class="color-option" data-color="purple" id="purple"></div>
+      <div class="color-option" data-color="blue" id="blue"></div>
+      <div class="color-option" data-color="red" id="red"></div>
+    </div>
+  </main>
+</body>
+
+</html>
